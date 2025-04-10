@@ -1,0 +1,94 @@
+/* app/catalog/CatalogPage.module.css */
+
+.catalogContainer {
+    padding: 3rem 1.5rem;
+  }
+  
+  .catalogTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .catalogTitleScrolled {
+    transform: translateY(-10px); /* Заголовок сдвигается вверх при прокрутке */
+    color: #38a169; /* Изменение цвета заголовка на зеленый при прокрутке */
+  }
+  
+  .filterBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .filterButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #38a169;
+    color: white;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .filterButton:hover {
+    background-color: #2f855a;
+    transform: translateY(-3px);
+  }
+  
+  .productGrid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  @media (min-width: 640px) {
+    .productGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .productGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .productGrid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Анимация плавного появления блоков */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .productGridItem {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .productGridItem:nth-child(even) {
+    animation-delay: 200ms;
+  }
+  
+  .productGridItem:nth-child(odd) {
+    animation-delay: 100ms;
+  }
+  

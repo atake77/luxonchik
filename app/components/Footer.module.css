@@ -1,0 +1,41 @@
+/* app/components/Footer.module.css */
+
+.footer {
+  background: linear-gradient(to right, #f0fdf4, #dcfce7);
+  border-top: 1px solid #e2e8f0;
+  padding: 2rem 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.brand {
+  color: #4b5563;
+  font-weight: 500;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link,
+.socialLink {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover,
+.socialLink:hover {
+  color: #22c55e;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,95 @@
+/* app/page.module.css */
+
+.heroContainer {
+    background: linear-gradient(to right, #38a169, #2f855a); /* Градиентный фон */
+    color: white;
+    padding: 8rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ffffff, #f7fafc);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+    text-align: center;
+    color: #f7fafc;
+    margin-bottom: 2.5rem;
+  }
+  
+  .productSection {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  
+  .productTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: #2f855a;
+    letter-spacing: 3px;
+  }
+  
+  .productGridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .productCard {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .productCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .productCardImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .productCard:hover .productCardImage {
+    transform: scale(1.05);
+  }
+  
+  .productCardText {
+    padding: 1.25rem;
+  }
+  
+  .productCardTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .productCardTitle:hover {
+    color: #38a169;
+  }
+  
+  .productCardPrice {
+    font-size: 1.125rem;
+    color: #333;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+  

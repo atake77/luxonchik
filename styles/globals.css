@@ -1,0 +1,103 @@
+/* Подключаем шрифты, если нужно */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Обновляем шрифты по умолчанию */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafb; /* светлый фон для всего приложения */
+  color: #333; /* основной цвет текста */
+  line-height: 1.6;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #16a34a; /* Зеленый при наведении */
+  text-decoration: underline;
+}
+
+/* Tailwind добавляет базовые стили для форм, кнопок и т.д., но можно их немного настроить */
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Глобальные стили для Tailwind */
+html, body, #__next {
+  height: 100%;
+}
+
+/* Глобальные стили для контейнеров */
+.container {
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Убираем дефолтные отступы у списка */
+ul, ol {
+  list-style: none;
+}
+
+/* Стили для .bg-green-600 (будет использоваться в Appbar, Footer и других компонентах) */
+.bg-green-600 {
+  background-color: #16a34a;
+}
+
+.bg-green-50 {
+  background-color: #f0fdf4;
+}
+
+/* Переопределение стилистики для кнопок */
+button {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #15803d;
+}
+
+/* Настройка изображений */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Анимации */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Настройки адаптивности */
+@media (max-width: 640px) {
+  /* На мобильных устройствах добавляем немного отступов */
+  body {
+    padding: 8px;
+  }
+}

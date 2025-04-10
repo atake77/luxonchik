@@ -1,0 +1,84 @@
+/* app/contacts/ContactsPage.module.css */
+
+.contactsContainer {
+    padding: 4rem 1.5rem;
+    background: linear-gradient(to right, #38a169, #2f855a); /* Градиентный фон */
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .contactsTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffffff, #f7fafc);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .contactItem {
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contactItem strong {
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  
+  .contactItem a {
+    color: #f7fafc;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .contactItem a:hover {
+    color: #38a169;
+  }
+  
+  .contactsText {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #f7fafc;
+  }
+  
+  .contactsText strong {
+    color: #ffffff;
+  }
+  
+  .mapContainer {
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .mapContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Анимация появления */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .contactsText {
+      font-size: 1.25rem;
+    }
+  }
+  

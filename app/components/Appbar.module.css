@@ -1,0 +1,78 @@
+/* app/components/Appbar.module.css */
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb; /* Light gray border */
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .headerScrolled {
+    background-color: #ffffff; /* Subtle change on scroll */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 7xl;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #38a169; /* Fresh green */
+    letter-spacing: 0.05rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #2f855a; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  .nav {
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .link {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2d3748;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #38a169;
+    transform: translateY(-2px);
+  }
+  
+  .active {
+    color: #38a169;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      gap: 1rem;
+    }
+  
+    .logo {
+      font-size: 2rem;
+    }
+  }
+  
