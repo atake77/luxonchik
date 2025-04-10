@@ -3,6 +3,7 @@
 import Hero from './components/Hero';
 import ProductGrid from './components/ProductGrid';
 import { products } from '@/lib/products';
+import styles from './Page.module.css';
 
 export default function HomePage() {
   // Здесь можно фильтровать или выбирать только популярные товары для главной

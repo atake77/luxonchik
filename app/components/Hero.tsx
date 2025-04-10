@@ -10,13 +10,9 @@ export default function Hero() {
       <div className={styles.container}>
         {/* Header/Navigation */}
         <header className={styles.header}>
-          <Link href="/" className={styles.logo}>
-            Luxon
-          </Link>
+          
           <nav className={styles.nav}>
-            <Link href="/" className={styles.navLink}>Home</Link>
-            <Link href="/catalog" className={styles.navLink}>Catalog</Link>
-            <Link href="/contacts" className={styles.navLink}>Contacts</Link>
+            
           </nav>
         </header>
 
