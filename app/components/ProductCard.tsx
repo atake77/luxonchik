@@ -31,7 +31,7 @@ export default function ProductCard({ product }: Props) {
           {product.name}
         </h3>
         <p className={styles.productPrice}>
-          {product.price.toFixed(2)} ₽
+          {product.price.toFixed(2)} С
         </p>
         {/* Если вы хотите добавить кнопку "Добавить в корзину" */}
         <Link
