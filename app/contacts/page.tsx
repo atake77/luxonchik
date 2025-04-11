@@ -12,7 +12,7 @@ export default function ContactsPage() {
         {/* Блок с адресом */}
         <div className={styles.contactItem}>
           <p className={styles.contactsText}>
-            <strong>Адрес:</strong> г. Бишкек, жибек жолу 56
+            <strong>Адрес:</strong> г. Бишкек, Жибек жолу 57
           </p>
         </div>
 
