@@ -12,7 +12,7 @@ export default function ContactsPage() {
         {/* Блок с адресом */}
         <div className={styles.contactItem}>
           <p className={styles.contactsText}>
-            <strong>Адрес:</strong> г. Бишкек, Жибек жолу 57
+            <strong>Адрес:</strong> г. Бишкек, Жибек-Жолу 57
           </p>
         </div>
 
@@ -22,6 +22,9 @@ export default function ContactsPage() {
             <strong>Телефон:</strong>{' '}
             <a href="tel:+74951234567" className={styles.contactsLink}>
               +996 555 454 755
+              +995 770 260 708
+              +996 555 073 789
+              +996 990 099 973
             </a>
           </p>
         </div>
