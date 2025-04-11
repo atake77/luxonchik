@@ -26,21 +26,26 @@ export default function ProductPage({ params }: Props) {
 
   const images = [
     product.image,
+    '/placeholder-image-1.jpg',
     '/placeholder-image-2.jpg',
     '/placeholder-image-3.jpg',
-    '/placeholder-image-4.jpg'
+    '/placeholder-image-4.jpg',
+    '/placeholder-image-5.jpg',
+    '/placeholder-image-6.jpg',
+    '/placeholder-image-7.jpg',
+    '/placeholder-image-8.jpg'
   ];
 
   const formattedPrice = new Intl.NumberFormat('ru-RU', {
     style: 'currency',
-    currency: 'RUB',
+    currency: 'Som',
     maximumFractionDigits: 0,
   }).format(product.price);
 
   const formattedOldPrice = product.oldPrice
     ? new Intl.NumberFormat('ru-RU', {
         style: 'currency',
-        currency: 'RUB',
+        currency: 'Som',
         maximumFractionDigits: 0,
       }).format(product.oldPrice)
     : null;
